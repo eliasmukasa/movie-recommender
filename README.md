@@ -6,7 +6,7 @@ A full-stack application featuring a machine learning model deployed as a live w
 
 Check out the live, deployed application here: [https://mlproject.eliaskizito.com](https://mlproject.eliaskizito.com)
 
-> 💡 Note: To add your screenshot, take a picture of your running application, save it as `screenshot.png` in your main project folder, and then commit and push it to GitHub. The image will appear here automatically.
+screenshot.png 
 
 ---
 

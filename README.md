@@ -6,7 +6,6 @@ A full-stack application featuring a machine learning model deployed as a live w
 
 Check out the live, deployed application here: [https://mlproject.eliaskizito.com](https://mlproject.eliaskizito.com)
 
-screenshot.png 
 
 ---
 

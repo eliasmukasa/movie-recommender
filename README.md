@@ -1,134 +1,96 @@
 # 🎬 Movie Recommendation Engine
 
-A full-stack web application that uses a content-based filtering algorithm to provide personalized movie recommendations. This project demonstrates an end-to-end machine learning workflow, from data processing and model creation to API development and building an interactive user interface.
+A full-stack application featuring a machine learning model deployed as a live web service to provide real-time movie recommendations.
 
-![Screenshot](screenshot.png)
+## 🚀 Live Demo
 
----
+Check out the live, deployed application here: [https://mlproject.eliaskizito.com](https://mlproject.eliaskizito.com)
 
-## 📄 About The Project
-
-This project was built to showcase the fundamental principles of machine learning and full-stack web development. The core of the application is a Python backend powered by Flask, which serves a recommendation model built with Pandas and Scikit-learn. The model suggests movies based on genre similarity using a TF-IDF vectorizer and cosine similarity calculations.
-
-The backend exposes a simple REST API that can be consumed by any frontend. This project includes a lightweight, responsive frontend built with vanilla HTML, CSS, and JavaScript to provide an intuitive user experience.
+> 💡 Note: To add your screenshot, take a picture of your running application, save it as `screenshot.png` in your main project folder, and then commit and push it to GitHub. The image will appear here automatically.
 
 ---
 
-## ✨ Key Features
+## 📖 About The Project
 
-* **Machine Learning Core:** Implements a content-based filtering model to recommend movies based on genre similarity.
-* **REST API Backend:** A custom API built with Flask serves the model's predictions.
-* **Data Processing:** Utilizes the Pandas library to load and prepare the MovieLens dataset.
-* **Interactive Frontend:** A clean UI allows users to input a movie and receive a list of 10 recommendations fetched from the backend.
+This project demonstrates an end-to-end machine learning workflow, from data processing to deploying a model as a public-facing web service. The core of the application is a Python backend that runs continuously on a cloud server, exposing a REST API built with Flask. This API serves predictions from a content-based filtering model that was trained on the MovieLens dataset using Scikit-learn.
+
+The API is consumed by a lightweight, responsive frontend built with vanilla HTML, CSS, and JavaScript, providing an intuitive interface for any user to get movie recommendations.
 
 ---
 
-## 🛠️ Built With
+## 🔑 Key Features
+
+- **Live Web Service**: The backend is deployed as a persistent web service on Render, making the ML model accessible to any client via its public API.
+- **Machine Learning Model**: Implements a content-based filtering model using TF-IDF and Cosine Similarity to recommend movies based on genre.
+- **RESTful API**: A custom API built with Flask to serve model predictions from a clean `/recommend` endpoint.
+- **Interactive Frontend**: A clean user interface that allows users to input a movie and receive a list of recommendations fetched from the live backend service.
+
+---
+
+## 🧰 Built With
 
 ### Backend & Machine Learning:
-
-* Python
-* Flask
-* Pandas
-* Scikit-learn
-* Gunicorn
+- Python
+- Flask
+- Pandas
+- Scikit-learn
+- Gunicorn
 
 ### Frontend:
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
 
-* HTML5
-* CSS3
-* Vanilla JavaScript (ES6+)
+### Deployment:
+- Render (for the Python Web Service)
 
 ---
 
-## 🚀 Getting Started
-
-To get a local copy up and running, follow these simple steps.
+## ⚙️ Getting Started
 
 ### Prerequisites
 
-Make sure Python 3 and pip are installed on your system.
+You will need to have Python 3 and `pip` installed on your system.
 
 ### Installation & Setup
 
-1. **Clone the repository:**
-
 ```bash
+# Clone the repository
 git clone https://github.com/your_username/your_repository_name.git
-```
 
-2. **Navigate to the project directory:**
-
-```bash
+# Navigate to the project directory
 cd movie-recommender
-```
 
-3. **Create and activate a virtual environment:**
-
-```bash
-# Create the environment
+# Create the virtual environment
 python3 -m venv venv
 
 # Activate on macOS/Linux
 source venv/bin/activate
 
-# Activate on Windows
-venv\Scripts\activate
-```
-
-4. **Install required packages:**
-
-```bash
+# Install required packages
 pip install -r requirements.txt
 ```
 
-5. **Download the dataset:**
+### Download the dataset:
 
-* Get the [MovieLens dataset](https://grouplens.org/datasets/movielens/) (`ml-latest-small.zip`)
-* Unzip it and place `movies.csv` and `ratings.csv` in the root of the project folder
+Download the **ml-latest-small.zip** dataset from [MovieLens](https://grouplens.org/datasets/movielens/).
+
+Unzip it and place the `movies.csv` and `ratings.csv` files in the root of the project folder.
 
 ---
 
-## 🔄 Running the Application
-
-Run the Flask development server:
+## ▶️ Running the Application
 
 ```bash
+# Start the development server
 flask run --port=8080
 ```
 
-Visit [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser to use the app.
-
----
-
-## 📊 API Endpoint
-
-**GET** `/recommend`
-
-**Query Parameter:** `title` (the name of the movie)
-
-**Example:** `/recommend?title=The Dark Knight`
-
-### Success Response:
-
-```json
-{
-  "recommendations": ["Batman Begins", "Inception", ...]
-}
-```
-
-### Error Response:
-
-```json
-{
-  "error": "Movie not found."
-}
-```
+Open your browser and navigate to [http://127.0.0.1:8080](http://127.0.0.1:8080) to see the application in action.
 
 ---
 
 ## 🙏 Acknowledgments
 
-This project uses the [MovieLens dataset](https://grouplens.org/datasets/movielens/), collected by the GroupLens research group at the University of Minnesota.
-
-Big thanks to the developers and maintainers of the open-source libraries that made this project possible.
+- This project uses the **MovieLens** dataset, collected by the [GroupLens research group](https://grouplens.org) at the University of Minnesota.
+- Web service hosting by [Render](https://render.com).

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Engine</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Link to Google Fonts for a nicer look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Recommendation Engine</h1>
+            <p>Enter a movie you like, and we'll suggest others you might enjoy.</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="movie-input" placeholder="e.g., The Dark Knight, Toy Story...">
+            <button id="search-button">Recommend</button>
+        </div>
+
+        <!-- The results will be displayed here -->
+        <div id="results-container">
+            <!-- This will be populated by our JavaScript -->
+        </div>
+    </div>
+
+    <!-- Link to our JavaScript file at the end of the body -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

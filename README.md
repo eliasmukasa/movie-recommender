@@ -4,8 +4,6 @@ A full-stack web application that uses a content-based filtering algorithm to pr
 
 ![Screenshot](screenshot.png)
 
-> *Note: Replace this screenshot with one of your own by saving it as `screenshot.png` in your main project folder. Commit and push to GitHub, and it will appear above.*
-
 ---
 
 ## 📄 About The Project

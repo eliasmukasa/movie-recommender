@@ -16,6 +16,7 @@ This project demonstrates an end-to-end machine learning workflow, from data pro
 The API is consumed by a lightweight, responsive frontend built with vanilla HTML, CSS, and JavaScript, providing an intuitive interface for any user to get movie recommendations.
 
 ---
+![Screenshot of the application](./screenshot.png)
 
 ## 🔑 Key Features
 

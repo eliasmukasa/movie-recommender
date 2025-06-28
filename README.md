@@ -4,7 +4,7 @@ A full-stack application featuring a machine learning model deployed as a live w
 
 ## 🚀 Live Demo
 
-Check out the live, deployed application here: [https://mlproject.eliaskizito.com](https://mlproject.eliaskizito.com)
+Check out the live, deployed application here: ([Full-Stack ML Movie Recommender](https://movie-recommender-t749.onrender.com/))
 
 
 ---

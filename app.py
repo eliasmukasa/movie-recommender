@@ -88,5 +88,11 @@ def recommend():
     return jsonify({"recommendations": recommendations})
 
 
+
+# Health check endpoint for uptime monitoring
+@app.route('/ping')
+def ping():
+    return jsonify({"status": "ok"}), 200
+
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
